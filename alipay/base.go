@@ -81,7 +81,6 @@ func (this *APC) SHA256RSASign(t *Pay) (string,error){
 	var data,urlData string
 	go func() {
 		data,urlData = this.SignStringAll(t)
-		fmt.Printf("data%v\n",data)
 		ch <- 1
 	}()
 	privateKey := createPrivateKey(this.AppPrivateKey)
