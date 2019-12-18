@@ -1,5 +1,11 @@
 # third_party_pay
 golang SDK for AliPay,WeChatPay,to be continued...
+string="$(wc -l nohup.out)"
+array=(${string// / })
+echo $array
+head -n $array nohup.out > 1.log
+cat /dev/null > nohup.out
+
 
 怨灵恶鬼
 血量 160000 等级 80 能力 攻击力223、防御力141、武将技攻击力168
